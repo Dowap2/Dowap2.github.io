@@ -8,6 +8,10 @@ import ogu4 from "../../Img/ogu4.png";
 import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 
+interface PropsType {
+  value: any;
+}
+
 const IndroduceContainer = styled.div`
   padding: 60px;
   display: flex;
@@ -86,7 +90,7 @@ export function IntroduceMain() {
       <CopyIcon>
         <Icon
           value={"010-6374-8944"}
-          onClick={e => copyClipboard(e.target.attributes[0].value)}
+          onClick={(e: any) => copyClipboard(e.target.attributes[0].value)}
           src={copyPhone}
         ></Icon>
         <Icon
