@@ -5,7 +5,7 @@ const ChangeLanguageComponent = styled.select`
   margin: 20px;
 `;
 
-export function InputLanguage(props) {
+export function InputLanguage(props: any) {
   const intl = useIntl();
   return (
     <ChangeLanguageComponent onChange={e => props.onChange(e.target.value)}>

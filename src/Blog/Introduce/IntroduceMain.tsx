@@ -66,10 +66,10 @@ const LinkTitle = styled.div`
   margin: auto;
 `;
 export function IntroduceMain() {
-  const copyClipboard = text => {
+  const copyClipboard = (text: any) => {
     console.log(text);
     window.navigator.clipboard.writeText(text).then(() => {
-      alert("복사완료");
+      alert("?? ??");
     });
   };
   const intl = useIntl();

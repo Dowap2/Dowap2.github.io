@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-const BannerItem = styled.div`
+interface Container {
+  background: string;
+}
+
+const BannerItem = styled.div<Container>`
   width: 100vw;
   height: 240px;
   color: #000;
@@ -14,6 +18,6 @@ const BannerItem = styled.div`
   text-align: center;
 `;
 
-export function Banner(props) {
+export function Banner(props: any) {
   return <BannerItem background={props.url}></BannerItem>;
 }

@@ -11,7 +11,7 @@ const BannerComponent = styled.div`
   background: black;
   overflow-x: hidden;
 `;
-const BannerList = styled.div`
+const BannerList = styled.div<{ transform: string }>`
   width: 500vw;
   height: 240px;
   transform: ${props => props.transform};
